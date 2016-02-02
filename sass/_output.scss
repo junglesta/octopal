@@ -1,11 +1,4 @@
 
-section {
-  border-top: 2px solid #e6e6e6;
-  text-align: center;
-  padding: 1.5rem 0;
-  &:first-of-type { border-top: none; }
-  @media (min-width: 40rem) { padding: 2rem 0; }
-}
 
 .container {
   margin: 0 auto;
@@ -33,4 +26,14 @@ section {
   bottom:0;
   width: 100%;
   min-height: 100%;
+}
+
+
+
+section {
+  border-top: 2px solid $bg_color;
+  text-align: center;
+  padding: 1.5rem 0;
+  &:first-of-type { border-top: none; }
+  @media (min-width: 40rem) { padding: 2rem 0; }
 }

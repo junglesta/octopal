@@ -197,16 +197,6 @@ header {
     header {
       padding: 2rem 0; } }
 
-section {
-  border-top: 2px solid #e6e6e6;
-  text-align: center;
-  padding: 1.5rem 0; }
-  section:first-of-type {
-    border-top: none; }
-  @media (min-width: 40rem) {
-    section {
-      padding: 2rem 0; } }
-
 .logo {
   color: #9cc1e8; }
 
@@ -400,16 +390,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px; }
 
-section {
-  border-top: 2px solid #e6e6e6;
-  text-align: center;
-  padding: 1.5rem 0; }
-  section:first-of-type {
-    border-top: none; }
-  @media (min-width: 40rem) {
-    section {
-      padding: 2rem 0; } }
-
 .container {
   margin: 0 auto;
   max-width: 40rem;
@@ -431,6 +411,16 @@ section {
   bottom: 0;
   width: 100%;
   min-height: 100%; }
+
+section {
+  border-top: 2px solid #4a8dd4;
+  text-align: center;
+  padding: 1.5rem 0; }
+  section:first-of-type {
+    border-top: none; }
+  @media (min-width: 40rem) {
+    section {
+      padding: 2rem 0; } }
 
 /* uncss:ignore */
 .swatch {
