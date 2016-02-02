@@ -1,0 +1,26 @@
+{
+  "name": "color-sucker",
+  "version": "0.0.1",
+  "description": "octopal",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-uncss": "^1.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frontend utility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:toybreaker/octopal.git"
+  },
+  "author": "toybreaker",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^2.1.1"
+  }
+}
