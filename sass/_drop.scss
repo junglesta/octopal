@@ -1,0 +1,60 @@
+
+.sharing-section {
+  position: fixed;
+  z-index: 10;
+  top: 20px;
+  right: 0;
+}
+
+.drag-drop-section { display: none; }
+
+.drop-zone {
+    height: 25rem;
+    margin-bottom: 4rem;
+    background-color: #222;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.drop-zone.dragging {
+    font-weight: 700;
+    -webkit-box-shadow: inset 0 0 0 8px$bg_color;
+    -moz-box-shadow: inset 0 0 0 8px$bg_color;
+    box-shadow: inset 0 0 0 8px$bg_color;
+}
+
+.drop-zone.dragging .drop-zone-label { color:$bg_color;}
+
+.drop-zone.dragging .default-label { display: none; }
+
+.drop-zone.dragging .dragging-label { display: block;}
+
+.drop-zone-label {
+  position: relative;
+  top: 11rem;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  pointer-events: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  @media (min-width: 40rem) {
+    top: 10.5rem;
+    font-size: 2.4rem;
+  }
+}
+
+.get-color,
+.function-title,
+.dropped-image .run-functions-button,
+.dragging-label,
+code {display:none;}
+
+// that's it

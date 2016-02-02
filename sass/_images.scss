@@ -1,0 +1,59 @@
+
+.example-images{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* uncss:ignore */
+.image-section {
+  display: block;
+  position: relative;
+  padding: 2rem 0;
+  /* uncss:ignore */
+  .image-wrap {
+    position: relative;
+    line-height: 1em;
+  }
+}
+
+/* uncss:ignore */
+.examples-section .image-section .target-image {
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* uncss:ignore */
+.examples-section .image-section.with-color-thief-output .target-image {
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+
+/* uncss:ignore */
+.target-image {
+  display: block;
+  width: 100%;
+  min-height: 450px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}

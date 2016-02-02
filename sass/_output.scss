@@ -1,0 +1,36 @@
+
+section {
+  border-top: 2px solid #e6e6e6;
+  text-align: center;
+  padding: 1.5rem 0;
+  &:first-of-type { border-top: none; }
+  @media (min-width: 40rem) { padding: 2rem 0; }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 40rem;
+  width: 90%;
+}
+
+
+/* uncss:ignore */
+.color-thief-output {
+  position: relative;
+  display: none;
+  // padding: 1.5rem;
+}
+
+/* uncss:ignore */
+.function-title {
+  margin-top: 0;
+  font-size: .5rem;
+}
+
+/* uncss:ignore */
+.function {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  min-height: 100%;
+}
