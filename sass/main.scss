@@ -16,6 +16,11 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  font: 87%/1.5 "Karla", "lucida grande", sans-serif, sans-serif;
+  font-weight: 400;
+  @media (min-width: 40rem) {font-size: 100%};
+  @media (min-width: 64rem) {font-size: 106%};
 }
 
 a:focus { outline: thin dotted;}
@@ -141,12 +146,6 @@ table {
 
 
 
-html {
-  font: 87%/1.5 "Karla", "lucida grande", sans-serif, sans-serif;
-  font-weight: 400;
-  @media (min-width: 40rem) {font-size: 100%};
-  @media (min-width: 64rem) {font-size: 106%};
-}
 
 
 h1, h2, h3, h4, h5 {
@@ -416,45 +415,52 @@ header {
 
 /* uncss:ignore */
 .color-thief-output {
-    display: none;
-    padding: 1.5rem;
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    border-top-width: 0;
-    -moz-border-radius-bottomleft: 8px;
-    -webkit-border-bottom-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    -moz-border-radius-bottomright: 8px;
-    -webkit-border-bottom-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+  position: relative;
+  display: none;
+  padding: 1.5rem;
+  //background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-top-width: 0;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* uncss:ignore */
-.function-title { margin-top: 0;}
+.function-title {
+  margin-top: 0;
+  font-size: .5rem;
+}
 
 /* uncss:ignore */
-.function { margin-bottom: 1.5rem;}
+.function {
+  margin-bottom: 1.5rem;
+  position: absolute;
+  bottom:0;
+}
 
 /* uncss:ignore */
 .swatch {
   display: inline-block;
   margin: 0;
   background: #ddd;
+  color: white;
+  font-size: .7rem;
+  text-shadow: 0px 2px 2px black;
 }
 
+
 /* uncss:ignore */
+.get-palette .swatch,
 .get-color .swatch {
-    width: 6rem;
-    height: 3rem;
-}
-
-/* uncss:ignore */
-.get-palette .swatch {
   width: 3rem;
-  height: 2rem;
+  height: 6rem;
   @media (min-width: 40rem) {
-    width: 4rem;
-    height: 2.7rem;
+    width: 3.5rem;
+    height: 6rem;
   }
 }
 
@@ -521,7 +527,11 @@ footer {
     font-size: 2.4rem;
   }
 }
+
+.get-color,
+.function-title,
 .dropped-image .run-functions-button,
-.dragging-label {display:none;}
+.dragging-label,
+code {display:none;}
 
 // that's it
