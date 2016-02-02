@@ -97,13 +97,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   height: 8rem;
   margin-top: -4rem;
   margin-left: -4rem;
-  border: none;
+  border: 1px solid $bg_color;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  color: yellow;
+  color: $bg_color;
   background-color: #000;
   font-size: 2rem;
   font-weight: bold;

@@ -9,14 +9,13 @@
 .drag-drop-section { display: none; }
 
 .drop-zone {
-    height: 25rem;
+    width: 50vw;
+    height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 4rem;
     background-color: #222;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 .drop-zone.dragging {
@@ -34,21 +33,14 @@
 
 .drop-zone-label {
   position: relative;
-  top: 11rem;
+  top: 0;
+  line-height: 50vw;
   color: white;
-  font-size: 1.8rem;
+  font-size: $liquid_font_med;
   text-align: center;
   pointer-events: none;
   text-transform: uppercase;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  @media (min-width: 40rem) {
-    top: 10.5rem;
-    font-size: 2.4rem;
-  }
+  border-radius: 50%;
 }
 
 .get-color,
@@ -57,4 +49,4 @@
 .dragging-label,
 code {display:none;}
 
-// that's it
+/* that's it*/

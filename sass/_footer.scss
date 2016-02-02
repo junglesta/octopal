@@ -1,10 +1,17 @@
 
-
 footer {
   padding: 2rem 0;
   background-color: rgba(255,255,255,.15);
-  color: $bg_color;;
+  color: $bg_color;
   text-align: center;
+
   p { text-align: center; }
- .button { margin-top: 0.5rem;}
+
+ .button { margin-top: 0.5rem; }
+
+ a {
+   border-bottom: 1px solid $bg_color;
+   &:hover{color: white; border-color: white;}
+  }
+
 }

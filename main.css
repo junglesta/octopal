@@ -14,17 +14,9 @@ audio:not([controls]) {
 html {
   background: #4a8dd4;
   color: #000;
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font: 87%/1.5 "Karla", "lucida grande", sans-serif, sans-serif;
-  font-weight: 400; }
-  @media (min-width: 40rem) {
-    html {
-      font-size: 100%; } }
-  @media (min-width: 64rem) {
-    html {
-      font-size: 106%; } }
+  font: caption;
+  font-weight: 400;
+  font-size: 2vw; }
 
 body {
   margin: 0;
@@ -38,7 +30,7 @@ a:active, a:hover {
   outline: 0; }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0.67em 0; }
 
 abbr[title] {
@@ -61,7 +53,7 @@ mark {
 
 code, kbd, pre, samp {
   font-family: monospace, serif;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 pre {
   white-space: pre-wrap; }
@@ -80,10 +72,10 @@ sub, sup {
   vertical-align: baseline; }
 
 sup {
-  top: -0.5em; }
+  top: -0.5rem; }
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25rem; }
 
 img {
   border: 0; }
@@ -97,7 +89,7 @@ figure {
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35rem 0.625rem 0.75rem; }
 
 legend {
   border: 0;
@@ -113,26 +105,27 @@ table {
 
 h1, h2, h3, h4, h5 {
   color: #222;
-  line-height: 1.2em;
-  font-weight: 700; }
+  line-height: 1.2;
+  font-weight: 100; }
 
 h1 {
   font-size: 4rem;
-  margin: 0 0 0.2em 0;
-  line-height: 1.1em; }
+  margin: 0 0 0.2rem 0;
+  line-height: 1.1; }
 
 h2 {
   color: #4a8dd4;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 200; }
 
 h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem; }
 
 p {
-  margin: 0 auto 2em auto;
+  margin: 0 auto 2rem auto;
   text-align: left; }
 
 .lead {
@@ -189,7 +182,7 @@ header {
   padding: 4rem 0 2rem 0;
   background-color: rgba(255, 255, 255, 0.15);
   text-align: center; }
-  header h1 .run-functions-button {
+  header h1 {
     color: white; }
   header p {
     text-align: center; }
@@ -278,13 +271,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   height: 8rem;
   margin-top: -4rem;
   margin-left: -4rem;
-  border: none;
+  border: 1px solid #4a8dd4;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  color: yellow;
+  color: #4a8dd4;
   background-color: #000;
   font-size: 2rem;
   font-weight: bold;
@@ -358,7 +351,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   /* uncss:ignore */ }
   .image-section .image-wrap {
     position: relative;
-    line-height: 1em; }
+    line-height: 1; }
 
 /* uncss:ignore */
 .examples-section .image-section .target-image {
@@ -393,7 +386,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .container {
   margin: 0 auto;
   max-width: 40rem;
-  width: 90%; }
+  width: 100%; }
 
 /* uncss:ignore */
 .color-thief-output {
@@ -461,6 +454,11 @@ footer {
     text-align: center; }
   footer .button {
     margin-top: 0.5rem; }
+  footer a {
+    border-bottom: 1px solid #4a8dd4; }
+    footer a:hover {
+      color: white;
+      border-color: white; }
 
 .sharing-section {
   position: fixed;
@@ -472,14 +470,13 @@ footer {
   display: none; }
 
 .drop-zone {
-  height: 25rem;
+  width: 50vw;
+  height: 50vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 4rem;
   background-color: #222;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px; }
+  border-radius: 50%; }
 
 .drop-zone.dragging {
   font-weight: 700;
@@ -498,21 +495,14 @@ footer {
 
 .drop-zone-label {
   position: relative;
-  top: 11rem;
+  top: 0;
+  line-height: 50vw;
   color: white;
-  font-size: 1.8rem;
+  font-size: 3vw;
   text-align: center;
   pointer-events: none;
   text-transform: uppercase;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px; }
-  @media (min-width: 40rem) {
-    .drop-zone-label {
-      top: 10.5rem;
-      font-size: 2.4rem; } }
+  border-radius: 50%; }
 
 .get-color,
 .function-title,
@@ -520,3 +510,5 @@ footer {
 .dragging-label,
 code {
   display: none; }
+
+/* that's it*/

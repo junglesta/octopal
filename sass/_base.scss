@@ -14,14 +14,10 @@ audio:not([controls]) {
 html {
   background: $bg_color;
   color: #000;
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 
-  font: 87%/1.5 "Karla", "lucida grande", sans-serif, sans-serif;
+  font: caption;
   font-weight: 400;
-  @media (min-width: 40rem) {font-size: 100%};
-  @media (min-width: 64rem) {font-size: 106%};
+  font-size: $liquid_font_base;
 }
 
 body {
@@ -36,7 +32,7 @@ a:focus { outline: thin dotted;}
 a:active, a:hover { outline: 0;}
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0.67em 0;
 }
 
@@ -65,7 +61,7 @@ mark {
 
 code, kbd, pre, samp {
   font-family: monospace, serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 pre { white-space: pre-wrap;}
@@ -80,8 +76,8 @@ sub, sup {
   position: relative;
   vertical-align: baseline;
 }
-sup { top: -0.5em;}
-sub { bottom: -0.25em;}
+sup { top: -0.5rem;}
+sub { bottom: -0.25rem;}
 img { border: 0;}
 
 svg:not(:root) { overflow: hidden; }
@@ -92,7 +88,7 @@ figure { margin: 0;}
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 0.35rem 0.625rem 0.75rem;
 }
 
 legend {
@@ -116,14 +112,14 @@ table {
 
 h1, h2, h3, h4, h5 {
   color: #222;
-  line-height: 1.2em;
-  font-weight: 700;
+  line-height: 1.2;
+  font-weight: 100;
 }
 
 h1 {
   font-size: 4rem;
-  margin: 0 0 0.2em 0;
-  line-height: 1.1em;
+  margin: 0 0 0.2rem 0;
+  line-height: 1.1;
 }
 
 h2 {
@@ -131,6 +127,7 @@ h2 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+  font-weight: 200;
 }
 
 h3 {
@@ -139,7 +136,7 @@ h3 {
 }
 
 p {
-  margin: 0 auto 2em auto;
+  margin: 0 auto 2rem auto;
   text-align: left;
 }
 
@@ -199,7 +196,7 @@ hr {
 header {
   padding: 4rem 0 2rem 0;
   background-color: rgba(255,255,255,.15);
-  h1 .run-functions-button {
+  h1 {
     color: white;
   }
 
