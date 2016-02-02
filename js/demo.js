@@ -18,6 +18,7 @@ $(document).ready(function () {
   var examplesHTML = Mustache.to_html($('#image-section-template').html(), imageArray);
   $('#example-images').append(examplesHTML);
 
+
   // Event handlers
   $('.run-functions-button').on('click', function(event) {
     var $this = $(this);
@@ -34,19 +35,16 @@ $(document).ready(function () {
   // We also log execution time of functions for display.
   var showColorsForImage = function($image, $imageSection ) {
     var image                    = $image[0];
-    var start                    = Date.now();
     var color                    = colorThief.getColor(image);
-    var elapsedTimeForGetColor   = Date.now() - start;
     var palette                  = colorThief.getPalette(image);
-    var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
     var colorThiefOutput = {
       color: color,
-      palette: palette,
-      elapsedTimeForGetColor: elapsedTimeForGetColor,
-      elapsedTimeForGetPalette: elapsedTimeForGetPalette
+      palette: palette
+
     };
     var colorThiefOuputHTML = Mustache.to_html($('#color-thief-output-template').html(), colorThiefOutput);
+
 
     $imageSection.addClass('with-color-thief-output');
     $imageSection.find('.run-functions-button').addClass('hide');

@@ -270,17 +270,32 @@ section {
 
 header {
   padding: 4rem 0 2rem 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
   text-align: center; }
+  header h1 .run-functions-button {
+    color: yellow; }
   header p {
     text-align: center; }
   @media (min-width: 40rem) {
     header {
       padding: 2rem 0; } }
 
+.example-images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 /* uncss:ignore */
 .image-section {
-  margin-bottom: 80px;
+  display: block;
+  position: relative;
+  padding: 2rem 0;
   /* uncss:ignore */ }
   .image-section .image-wrap {
     position: relative;
@@ -319,8 +334,8 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  color: #777;
-  background-color: #fdf485;
+  color: yellow;
+  background-color: #000;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
@@ -349,7 +364,7 @@ header {
 
 /* uncss:ignore */
 .run-functions-button.hide {
-  background-color: #fdf485;
+  background-color: #000;
   color: #777;
   -webkit-transition: -webkit-transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75);
   -moz-transition: -moz-transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75);
@@ -388,16 +403,7 @@ header {
 /* uncss:ignore */
 .color-thief-output {
   position: relative;
-  display: none;
-  padding: 1.5rem;
-  border: 1px solid #e6e6e6;
-  border-top-width: 0;
-  -moz-border-radius-bottomleft: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px; }
+  display: none; }
 
 /* uncss:ignore */
 .function-title {
@@ -406,9 +412,10 @@ header {
 
 /* uncss:ignore */
 .function {
-  margin-bottom: 1.5rem;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  width: 100%;
+  min-height: 100%; }
 
 /* uncss:ignore */
 .swatch {
@@ -420,15 +427,21 @@ header {
   text-shadow: 0px 2px 2px black; }
 
 /* uncss:ignore */
+.swatches {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 400px; }
+
+/* uncss:ignore */
 .get-palette .swatch,
 .get-color .swatch {
-  width: 3rem;
-  height: 6rem; }
-  @media (min-width: 40rem) {
-    .get-palette .swatch,
-    .get-color .swatch {
-      width: 3.5rem;
-      height: 6rem; } }
+  height: 24rem;
+  width: 100%;
+  height: 100%;
+  margin: .1rem; }
 
 /* uncss:ignore */
 canvas {
