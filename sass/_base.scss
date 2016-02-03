@@ -12,7 +12,7 @@ audio:not([controls]) {
 
 
 html {
-  background: $bg_color;
+  background: $html_bg_color;
   color: #000;
 
   font: caption;
@@ -23,12 +23,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #161616;
 }
 
-
+/* uncss:ignore */
 a:focus { outline: thin dotted;}
 
+/* uncss:ignore */
 a:active, a:hover { outline: 0;}
 
 h1 {
@@ -131,6 +131,7 @@ h2 {
 }
 
 h3 {
+  color: $bg_color;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
@@ -144,7 +145,6 @@ p {
   max-width: 50rem;
   margin-bottom: 1.4rem;
   font-size: 1.1rem;
-  @media (min-width: 40rem){ font-size: 1.25rem; }
 }
 
 a {
@@ -181,7 +181,6 @@ hr {
   border-top: 2px solid #e6e6e6;
   margin: 2rem auto;
   width: 3rem;
-  @media (min-width: 40rem) { margin: 2.5rem auto; }
 }
 
 

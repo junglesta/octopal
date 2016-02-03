@@ -1,4 +1,4 @@
-
+/* uncss:ignore */
 .example-images{
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,11 +16,12 @@
   display: block;
   position: relative;
   padding: 2rem 0;
-  /* uncss:ignore */
-  .image-wrap {
-    position: relative;
-    line-height: 1;
-  }
+}
+
+/* uncss:ignore */
+.image-wrap {
+  position: relative;
+  line-height: 1;
 }
 
 /* uncss:ignore */

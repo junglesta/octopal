@@ -1,5 +1,5 @@
 
-
+/* uncss:ignore */
 .container {
   margin: 0 auto;
   max-width: 40rem;
@@ -11,7 +11,6 @@
 .color-thief-output {
   position: relative;
   display: none;
-  // padding: 1.5rem;
 }
 
 /* uncss:ignore */
@@ -29,11 +28,11 @@
 }
 
 
-
+/* uncss:ignore */
 section {
   border-top: 2px solid $bg_color;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  /* uncss:ignore */
   &:first-of-type { border-top: none; }
-  @media (min-width: 40rem) { padding: 2rem 0; }
 }

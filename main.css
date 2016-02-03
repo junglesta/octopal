@@ -12,7 +12,7 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  background: #4a8dd4;
+  background: #161616;
   color: #000;
   font: caption;
   font-weight: 400;
@@ -20,12 +20,13 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
-  background: #161616; }
+  padding: 0; }
 
+/* uncss:ignore */
 a:focus {
   outline: thin dotted; }
 
+/* uncss:ignore */
 a:active, a:hover {
   outline: 0; }
 
@@ -121,6 +122,7 @@ h2 {
   font-weight: 200; }
 
 h3 {
+  color: #4a8dd4;
   font-size: 1.2rem;
   margin-bottom: 0.5rem; }
 
@@ -132,9 +134,6 @@ p {
   max-width: 50rem;
   margin-bottom: 1.4rem;
   font-size: 1.1rem; }
-  @media (min-width: 40rem) {
-    .lead {
-      font-size: 1.25rem; } }
 
 a {
   color: #4a8dd4;
@@ -169,9 +168,6 @@ hr {
   border-top: 2px solid #e6e6e6;
   margin: 2rem auto;
   width: 3rem; }
-  @media (min-width: 40rem) {
-    hr {
-      margin: 2.5rem auto; } }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -192,75 +188,6 @@ header {
 
 .logo {
   color: #9cc1e8; }
-
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0; }
-
-button, input {
-  line-height: normal; }
-
-button, select {
-  text-transform: none; }
-
-button, html input[type='button'], input[type='reset'], input[type='submit'] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled], html input[disabled] {
-  cursor: default; }
-
-input[type='checkbox'], input[type='radio'] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type='search'] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-.button-minor {
-  padding: 0.35rem 1rem;
-  border: 2px solid #4a8dd4;
-  color: #4a8dd4;
-  background-color: transparent;
-  font-size: 0.8rem; }
-  .button-minor:hover {
-    color: #fff; }
-
-.button {
-  display: block;
-  padding: 0.7rem 2rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  color: #fff;
-  background-color: #4a8dd4;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  vertical-align: middle;
-  white-space: nowrap; }
-  .button:hover {
-    background: #4a8dd4;
-    text-decoration: none; }
-  @media (min-width: 40rem) {
-    .button {
-      display: inline-block;
-      margin: 0 0.25rem; } }
 
 /* uncss:ignore */
 .run-functions-button {
@@ -332,6 +259,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .no-touch .no-touch-label {
   display: inline; }
 
+/* uncss:ignore */
 .example-images {
   display: -webkit-box;
   display: -webkit-flex;
@@ -347,11 +275,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .image-section {
   display: block;
   position: relative;
-  padding: 2rem 0;
-  /* uncss:ignore */ }
-  .image-section .image-wrap {
-    position: relative;
-    line-height: 1; }
+  padding: 2rem 0; }
+
+/* uncss:ignore */
+.image-wrap {
+  position: relative;
+  line-height: 1; }
 
 /* uncss:ignore */
 .examples-section .image-section .target-image {
@@ -383,6 +312,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px; }
 
+/* uncss:ignore */
 .container {
   margin: 0 auto;
   max-width: 40rem;
@@ -405,15 +335,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   width: 100%;
   min-height: 100%; }
 
+/* uncss:ignore */
 section {
   border-top: 2px solid #4a8dd4;
   text-align: center;
-  padding: 1.5rem 0; }
+  padding: 2rem 0;
+  /* uncss:ignore */ }
   section:first-of-type {
     border-top: none; }
-  @media (min-width: 40rem) {
-    section {
-      padding: 2rem 0; } }
 
 /* uncss:ignore */
 .swatch {
@@ -445,6 +374,10 @@ section {
 canvas {
   display: none; }
 
+/* uncss:ignore */
+.swatch.dominant {
+  display: none; }
+
 footer {
   padding: 2rem 0;
   background-color: rgba(255, 255, 255, 0.15);
@@ -466,6 +399,7 @@ footer {
   top: 20px;
   right: 0; }
 
+/* uncss:ignore */
 .drag-drop-section {
   display: none; }
 
@@ -487,6 +421,7 @@ footer {
 .drop-zone.dragging .drop-zone-label {
   color: #4a8dd4; }
 
+/* uncss:ignore */
 .drop-zone.dragging .default-label {
   display: none; }
 

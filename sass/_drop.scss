@@ -6,6 +6,7 @@
   right: 0;
 }
 
+/* uncss:ignore */
 .drag-drop-section { display: none; }
 
 .drop-zone {
@@ -27,6 +28,7 @@
 
 .drop-zone.dragging .drop-zone-label { color:$bg_color;}
 
+/* uncss:ignore */
 .drop-zone.dragging .default-label { display: none; }
 
 .drop-zone.dragging .dragging-label { display: block;}
@@ -42,6 +44,7 @@
   text-transform: uppercase;
   border-radius: 50%;
 }
+
 
 .get-color,
 .function-title,
