@@ -226,28 +226,6 @@ header h1 {
 
 /* uncss:ignore */
 
-.examples-section .image-section .target-image {
-  -moz-border-radius-bottomleft: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-/* uncss:ignore */
-
-.examples-section .image-section.with-color-thief-output .target-image {
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
-  -moz-border-radius-bottomright: 0;
-  -webkit-border-bottom-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* uncss:ignore */
-
 .target-image {
   display: block;
   width: 100%;
@@ -281,8 +259,10 @@ header h1 {
 /* uncss:ignore */
 
 .function {
+  box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
+  border-bottom: 3px solid black;
   width: 100%;
   min-height: 100%;
 }
