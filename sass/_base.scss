@@ -12,17 +12,24 @@ audio:not([controls]) {
 
 
 html {
-  background: $html_bg_color;
   color: #000;
-
   font: caption;
   font-weight: 400;
   font-size: $liquid_font_base;
+  background: $html_bg_color;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* uncss:ignore */
+section{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 /* uncss:ignore */
@@ -31,21 +38,9 @@ a:focus { outline: thin dotted;}
 /* uncss:ignore */
 a:active, a:hover { outline: 0;}
 
-h1 {
-  font-size: 2rem;
-  margin: 0.67em 0;
-}
 
 abbr[title] {
   border-bottom: 1px dotted;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
 }
 
 hr {
@@ -70,6 +65,7 @@ small {
   font-size: 50%;
   color: $bg_color;
 }
+
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -95,7 +91,6 @@ legend {
   border: 0;
   padding: 0;
 }
-
 
 textarea {
   overflow: auto;
@@ -192,6 +187,7 @@ hr {
 
 
 
+
 header {
   padding: 4rem 0 2rem 0;
   background-color: rgba(255,255,255,.15);
@@ -203,8 +199,6 @@ header {
   p { text-align: center; }
   @media (min-width: 40rem) { padding: 2rem 0; }
 }
-
-
 
 
 

@@ -21,18 +21,10 @@
 
 /* uncss:ignore */
 .function {
+  box-sizing: border-box;
   position: absolute;
-  bottom:0;
+  bottom:-1px;
+  border-bottom: 3px solid black;
   width: 100%;
   min-height: 100%;
-}
-
-
-/* uncss:ignore */
-section {
-  border-top: 2px solid $bg_color;
-  text-align: center;
-  padding: 2rem 0;
-  /* uncss:ignore */
-  &:first-of-type { border-top: none; }
 }

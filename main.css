@@ -12,15 +12,22 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  background: #161616;
   color: #000;
   font: caption;
   font-weight: 400;
-  font-size: 2vw; }
+  font-size: 2vw;
+  background: #161616; }
 
 body {
-  margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
+
+/* uncss:ignore */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center; }
 
 /* uncss:ignore */
 a:focus {
@@ -30,18 +37,8 @@ a:focus {
 a:active, a:hover {
   outline: 0; }
 
-h1 {
-  font-size: 2rem;
-  margin: 0.67em 0; }
-
 abbr[title] {
   border-bottom: 1px dotted; }
-
-b, strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
 
 hr {
   -moz-box-sizing: content-box;
@@ -283,33 +280,11 @@ header {
   line-height: 1; }
 
 /* uncss:ignore */
-.examples-section .image-section .target-image {
-  -moz-border-radius-bottomleft: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px; }
-
-/* uncss:ignore */
-.examples-section .image-section.with-color-thief-output .target-image {
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
-  -moz-border-radius-bottomright: 0;
-  -webkit-border-bottom-right-radius: 0;
-  border-bottom-right-radius: 0; }
-
-/* uncss:ignore */
 .target-image {
   display: block;
   width: 100%;
-  min-height: 450px;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-radius: 8px;
+  height: 450px;
   border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px; }
 
 /* uncss:ignore */
@@ -330,19 +305,12 @@ header {
 
 /* uncss:ignore */
 .function {
+  box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
+  border-bottom: 3px solid black;
   width: 100%;
   min-height: 100%; }
-
-/* uncss:ignore */
-section {
-  border-top: 2px solid #4a8dd4;
-  text-align: center;
-  padding: 2rem 0;
-  /* uncss:ignore */ }
-  section:first-of-type {
-    border-top: none; }
 
 /* uncss:ignore */
 .swatch {
@@ -350,7 +318,7 @@ section {
   margin: 0;
   background: #ddd;
   color: white;
-  font-size: .7rem;
+  font-size: .5rem;
   text-shadow: 0px 2px 2px black; }
 
 /* uncss:ignore */
@@ -439,6 +407,7 @@ footer {
   text-transform: uppercase;
   border-radius: 50%; }
 
+/* uncss:ignore */
 .get-color,
 .function-title,
 .dropped-image .run-functions-button,

@@ -11,7 +11,8 @@ $(document).ready(function () {
   var imageArray = {images: [
       {'file': 'img/photo2.jpg'},
       {'file': 'img/photo1.jpg'},
-      {'file': 'img/photo3.jpg'}
+      {'file': 'img/photo3.jpg'},
+      {'file': 'img/photo4.jpg'}
   ]};
 
   // Render example images
