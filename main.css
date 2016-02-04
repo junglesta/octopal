@@ -20,7 +20,8 @@ html {
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  height: 100vh; }
 
 /* uncss:ignore */
 section {
@@ -398,10 +399,11 @@ header {
   margin-right: 0;
   margin-bottom: 3rem; }
 
-.drop-zone.dragging {
-  font-weight: 700;
+/* uncss:ignore */
+body.dragging {
   background-color: #9cc1e8; }
 
+/* uncss:ignore */
 .drop-zone.dragging .drop-zone-label {
   color: rgba(255, 255, 255, 0.5); }
 
@@ -409,6 +411,7 @@ header {
 .drop-zone.dragging .default-label {
   display: none; }
 
+/* uncss:ignore */
 .drop-zone.dragging .dragging-label {
   display: block; }
 

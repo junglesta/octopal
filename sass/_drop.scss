@@ -28,7 +28,6 @@ header {
 /* uncss:ignore */
 .drag-drop-section { display: none; }
 
-
 .drop_zone_bg{
   //width: 80vw;
   height: 80vw;
@@ -47,16 +46,14 @@ header {
   margin-bottom: 3rem;
 }
 
-.drop-zone.dragging {
-  font-weight: 700;
-  background-color: lighten($bg_color, 20);
-}
-
+/* uncss:ignore */
+body.dragging { background-color: lighten($bg_color, 20);}
+/* uncss:ignore */
 .drop-zone.dragging .drop-zone-label { color: rgba(255,255,255,.5);}
 
 /* uncss:ignore */
 .drop-zone.dragging .default-label { display: none; }
-
+/* uncss:ignore */
 .drop-zone.dragging .dragging-label { display: block; }
 
 .drop-zone-label {
@@ -76,7 +73,6 @@ header {
 .dropped-image .run-functions-button,
 .dragging-label,
 code {display:none;}
-
 
 
 .octopal{ pointer-events: none;}
