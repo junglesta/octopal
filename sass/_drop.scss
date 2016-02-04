@@ -1,4 +1,16 @@
 
+header {
+  padding: 0;
+  //background-color: rgba(255,255,255,.15);
+  h1 {color: white;}
+  text-align: center;
+  p { text-align: center; }
+}
+
+.logo{
+  color: lighten($bg_color, 20);
+}
+
 /* uncss:ignore */
 .container {
   margin: 0 auto;
@@ -16,27 +28,14 @@
 /* uncss:ignore */
 .drag-drop-section { display: none; }
 
-// .drop_zone_bg {
-//   -webkit-tap-highlight-color: transparent;
-//   background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202%202%22%3E%3Cpath%20d%3D%22M1%202V0h1v1H0v1z%22%20fill-opacity%3D%22.05%22%2F%3E%3C%2Fsvg%3E");
-//   background-size: 16px 16px;
-//   background-color: hsla(0, 0%, 95%, 1);
-//   border-radius: 50%;
-//   width: 50vw;
-//   height: 50vw;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 
 .drop_zone_bg{
   //width: 80vw;
   height: 80vw;
   margin-left: auto;
   margin-right: auto;
-  background: url(img/octopal.svg) no-repeat top left;
-  background-size: contain;
 }
+
 .drop-zone {
   position: absolute;
   top: 0;
@@ -49,12 +48,8 @@
 }
 
 .drop-zone.dragging {
-  border-radius: 50%;
   font-weight: 700;
-  background-color: rgba(255,255,255,.25);
-  -webkit-box-shadow: inset 0 0 0 80px rgba(255,255,255,.5);
-  -moz-box-shadow: inset 0 0 0 80px rgba(255,255,255,.5);
-  box-shadow: inset 0 0 0 80px rgba(255,255,255,.5);
+  background-color: lighten($bg_color, 20);
 }
 
 .drop-zone.dragging .drop-zone-label { color: rgba(255,255,255,.5);}
@@ -73,7 +68,6 @@
   text-align: center;
   pointer-events: none;
   text-transform: uppercase;
-  //border-radius: 50%;
 }
 
 /* uncss:ignore */
@@ -83,4 +77,10 @@
 .dragging-label,
 code {display:none;}
 
-/* that's it*/
+
+
+.octopal{ pointer-events: none;}
+
+
+
+/*** that's it folks ***/

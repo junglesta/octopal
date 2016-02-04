@@ -24,6 +24,18 @@
   line-height: 1;
 }
 
+/* uncss:ignore */
+.target-image {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+
+
 // /* uncss:ignore */
 // .examples-section .image-section .target-image {
 //   border-bottom-radius: 8px;
@@ -35,13 +47,3 @@
 //   border-bottom-right-radius: 0;
 // }
 //
-
-
-/* uncss:ignore */
-.target-image {
-  display: block;
-  width: 100%;
-  height: 450px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}

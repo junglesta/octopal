@@ -1,4 +1,3 @@
-
 /* uncss:ignore */
 .swatch {
   display: inline-block;
@@ -7,6 +6,7 @@
   color: white;
   font-size: .5rem;
   text-shadow: 0px 2px 2px black;
+  line-height: 850px;
 }
 
 /* uncss:ignore */
@@ -17,7 +17,6 @@
   display: flex;
   width: 100%;
   height: 400px;
-  //line-height: 860px;
 }
 
 /* uncss:ignore */
@@ -35,35 +34,34 @@ canvas {display: none;}
 .swatch.dominant{
   display: none;
 }
-
-
-.octagon {
-	width: 100px;
-	height: 100px;
-	background: red;
-	position: relative;
-}
-
-.octagon:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-bottom: 29px solid red;
-	border-left: 29px solid #eee;
-	border-right: 29px solid #eee;
-	width: 42px;
-	height: 0;
-}
-
-.octagon:after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-top: 29px solid red;
-	border-left: 29px solid #eee;
-	border-right: 29px solid #eee;
-	width: 42px;
-	height: 0;
-}
+//
+// .octagon {
+// 	width: 100px;
+// 	height: 100px;
+// 	background: red;
+// 	position: relative;
+// }
+//
+// .octagon:before {
+// 	content: "";
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	border-bottom: 29px solid red;
+// 	border-left: 29px solid #eee;
+// 	border-right: 29px solid #eee;
+// 	width: 42px;
+// 	height: 0;
+// }
+//
+// .octagon:after {
+// 	content: "";
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 0;
+// 	border-top: 29px solid red;
+// 	border-left: 29px solid #eee;
+// 	border-right: 29px solid #eee;
+// 	width: 42px;
+// 	height: 0;
+// }
