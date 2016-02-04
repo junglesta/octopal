@@ -401,7 +401,8 @@ header {
 
 /* uncss:ignore */
 body.dragging {
-  background-color: #9cc1e8; }
+  background-color: #9cc1e8;
+  min-height: 100vh; }
 
 /* uncss:ignore */
 .drop-zone.dragging .drop-zone-label {

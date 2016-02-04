@@ -47,7 +47,10 @@ header {
 }
 
 /* uncss:ignore */
-body.dragging { background-color: lighten($bg_color, 20);}
+body.dragging {
+  background-color: lighten($bg_color, 20);
+  min-height: 100vh;
+}
 /* uncss:ignore */
 .drop-zone.dragging .drop-zone-label { color: rgba(255,255,255,.5);}
 
