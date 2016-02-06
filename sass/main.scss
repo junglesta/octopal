@@ -1,12 +1,25 @@
 @charset "utf-8";
 
-$text_color: red;
-$html_bg_color: #161616;
-$bg_color: rgb(74,141,212);
-$green: green;
+//base
+$white:  hsla(211, 70%, 90%, 1);
+$blue_4: hsla(211, 70%, 60%, 1);
+$blue_3: hsla(220, 80%, 60%, 1);
+$blue_2: hsla(229, 90%, 50%, 1);
+$blue:   hsla(238, 100%, 40%, 1);
+
+$green:       green;
+$text_color:  red;
+$blackgrey:   #161616;
+
+// derivates
+$bg_color:      $blue_4;
+$html_bg_color: $blackgrey;
+
+//liquid type
 $liquid_font_base: 2vw;
 $liquid_font_small: 1.5vw;
 $liquid_font_med: 3vw;
+
 
 
 @import

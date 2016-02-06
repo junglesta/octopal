@@ -16,17 +16,17 @@ $(document).ready(function () {
   ]};
 
   // Render example images
-  var examplesHTML = Mustache.to_html($('#image-section-template').html(), imageArray);
-  $('#example-images').append(examplesHTML);
+  var examplesHTML = Mustache.to_html($('#image_section_template').html(), imageArray);
+  $('#example_images').append(examplesHTML);
 
 
   // Event handlers
-  $('.run-functions-button').on('click', function(event) {
+  $('.run_functions_button').on('click', function(event) {
     var $this = $(this);
     $this.text('...');
-    var $imageSection     = $this.closest('.image-section');
-    var $colorThiefOutput = $imageSection.find('.color-thief-output');
-    var $targetimage      = $imageSection.find('.target-image');
+    var $imageSection     = $this.closest('.image_section');
+    var $colorThiefOutput = $imageSection.find('.color_thief_output');
+    var $targetimage      = $imageSection.find('.target_image');
     showColorsForImage($targetimage, $imageSection);
   });
 
@@ -44,18 +44,18 @@ $(document).ready(function () {
       palette: palette
 
     };
-    var colorThiefOuputHTML = Mustache.to_html($('#color-thief-output-template').html(), colorThiefOutput);
+    var colorThiefOuputHTML = Mustache.to_html($('#color_thief_output_template').html(), colorThiefOutput);
 
 
-    $imageSection.addClass('with-color-thief-output');
-    $imageSection.find('.run-functions-button').addClass('hide');
+    $imageSection.addClass('with_color_thiefvoutput');
+    $imageSection.find('.run_functions_button').addClass('hide');
 
     setTimeout(function(){
-      $imageSection.find('.color-thief-output').append(colorThiefOuputHTML).slideDown();
+      $imageSection.find('.color_thief_output').append(colorThiefOuputHTML).slideDown();
       // If the color-thief-output div is not in the viewport or cut off, scroll down.
       var windowHeight          = $(window).height();
       var currentScrollPosition = $('body').scrollTop()
-      var outputOffsetTop       = $imageSection.find('.color-thief-output').offset().top
+      var outputOffsetTop       = $imageSection.find('.color_thief_output').offset().top
       if ((currentScrollPosition < outputOffsetTop) && (currentScrollPosition + windowHeight - 250 < outputOffsetTop)) {
          $('body').animate({scrollTop: outputOffsetTop - windowHeight + 200 + "px"});
       }
@@ -68,8 +68,8 @@ $(document).ready(function () {
   // Setup the drag and drop behavior if supported
   if (Modernizr.draganddrop && !!window.FileReader && !isMobile()) {
 
-    $('#drag-drop').show();
-    var $dropZone = $('#drop-zone');
+    $('#drag_drop').show();
+    var $dropZone = $('#drop_zone');
     var handleDragEnter = function(event){
       $dropZone.addClass('dragging');
       return false;
@@ -94,7 +94,7 @@ $(document).ready(function () {
   }
 
   function handleFiles(files) {
-    var $draggedImages = $('#dragged-images');
+    var $draggedImages = $('#dragged_images');
     var imageType      = /image.*/;
     var fileCount      = files.length;
 
@@ -105,14 +105,14 @@ $(document).ready(function () {
         var reader = new FileReader();
         reader.onload = function(event) {
             imageInfo = { images: [
-                {'class': 'dropped-image', file: event.target.result}
+                {'class': 'dropped_image', file: event.target.result}
               ]};
 
-            var imageSectionHTML = Mustache.to_html($('#image-section-template').html(), imageInfo);
+            var imageSectionHTML = Mustache.to_html($('#image_section_template').html(), imageInfo);
             $draggedImages.prepend(imageSectionHTML);
 
-            var $imageSection = $draggedImages.find('.image-section').first();
-            var $image        = $('.dropped-image .target-image');
+            var $imageSection = $draggedImages.find('.image_section').first();
+            var $image        = $('.dropped_image .target_image');
 
             // Must wait for image to load in DOM, not just load from FileReader
             $image.on('load', function() {

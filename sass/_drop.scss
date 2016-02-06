@@ -1,14 +1,44 @@
+/* uncss:ignore */
+body.dragging {
+  background-color: $blue;
+  min-height: 100vh;
+}
+
+//svg colors
+.octopal{
+  //outline
+  .st0{
+    fill:$blue;
+    // set variation on user action
+    .dragging &{ fill : $blue_4;}
+  }
+  //body
+  .st1{
+    fill:$blue;
+    .dragging &{ fill : $blue_4;}
+  }
+  //text
+  .st2{
+      fill:$blue_4;
+      font: caption;
+      font-size: 55px;
+      font-weight: 200;
+      text-align: center;
+      .dragging &{ fill : $blue;}
+    }
+}
+
 
 header {
   padding: 0;
   //background-color: rgba(255,255,255,.15);
-  h1 {color: white;}
+  h1 {color: $white;}
   text-align: center;
   p { text-align: center; }
 }
 
 .logo{
-  color: lighten($bg_color, 20);
+  color: $blue;
 }
 
 /* uncss:ignore */
@@ -18,7 +48,7 @@ header {
   width: 100%;
 }
 
-.sharing-section {
+.sharing_section {
   position: fixed;
   z-index: 10;
   top: 20px;
@@ -26,7 +56,7 @@ header {
 }
 
 /* uncss:ignore */
-.drag-drop-section { display: none; }
+.drag_drop_section { display: none; }
 
 .drop_shop_bg{
   //width: 80vw;
@@ -39,42 +69,37 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vw;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 3rem;
+  margin: 0;
 }
 
 /* uncss:ignore */
-body.dragging {
-  background-color: lighten($bg_color, 20);
-  min-height: 100vh;
-}
-/* uncss:ignore */
-.drop-zone.dragging .drop-zone-label { color: rgba(255,255,255,.5);}
+.drop_zone.dragging .drop_zone_label { color: rgba(255,255,255,.5);}
 
 /* uncss:ignore */
-.drop-zone.dragging .default-label { display: none; }
+.drop_zone.dragging .default_label { display: none; }
 /* uncss:ignore */
-.drop-zone.dragging .dragging-label { display: block; }
+.drop_zone.dragging .dragging_label { display: block; }
 
-.drop-zone-label {
-  position: relative;
-  top: 18vw;
-  //line-height: 50vw;
-  color: lighten($bg_color, 20);
-  font-size: $liquid_font_med;
-  text-align: center;
-  pointer-events: none;
-  text-transform: uppercase;
-}
+// .drop_zone_label {
+//   position: relative;
+//   top: 18vw;
+//   //line-height: 50vw;
+//   color: rgba(255,255,255,.25);
+//   font-size: $liquid_font_med;
+//   text-align: center;
+//   pointer-events: none;
+//   text-transform: uppercase;
+// }
 
 /* uncss:ignore */
-.get-color,
-.function-title,
-.dropped-image .run-functions-button,
-.dragging-label,
+.get_color,
+.function_title,
+.dropped_image .run_functions_button,
+.dragging_label,
 code {display:none;}
 
 

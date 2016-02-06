@@ -10,7 +10,6 @@ footer {
 
  a {
    border-bottom: 1px solid $bg_color;
-   &:hover{color: white; border-color: white;}
+   &:hover{color: $white; border-color: $white;}
   }
-
 }

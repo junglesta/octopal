@@ -145,6 +145,7 @@ p {
 a {
     color: $bg_color;
     text-decoration: none;
+    &:hover{ color: lighten($bg_color, 10);}
 }
 
 ::-moz-selection, ::selection {
@@ -173,7 +174,7 @@ ul {
 
 hr {
   border: 0;
-  border-top: 2px solid #e6e6e6;
+  border-top: 2px solid $white;
   margin: 2rem auto;
   width: 3rem;
 }

@@ -28,9 +28,9 @@
 
 <div class="bungkus">
 
-	<section id="examples" class="examples-section">
+	<section id="examples" class="examples_section">
 		<div class="container">
-			<div id="example-images"></div>
+			<div id="example_images"></div>
 		</div>
 	</section>
 
@@ -56,30 +56,30 @@
 
 
 <!-- image-section Mustache templates -->
-<script id='image-section-template' type='text/x-mustache'>
+<script id='image_section_template' type='text/x-mustache'>
 {{#images}}
-<div class="image-section {{class}}">
-<div class="image-wrap">
-<button class="run-functions-button">
-<span class="no-touch-label"></span>
-<span class="touch-label">♥</span>
+<div class="image_section {{class}}">
+<div class="image_wrap">
+<button class="run_functions_button">
+<span class="no_touchvlabel"></span>
+<span class="touch_label">♥</span>
 </button>
-<img class="target-image" src="{{file}}" />
+<img class="target_image" src="{{file}}" />
 </div>
-<div class="color-thief-output"></div>
+<div class="color_thief_output"></div>
 </div>
 {{/images}}
 </script>
 
 <!-- output Mustache templates -->
-<script id="color-thief-output-template" type="text/x-mustache">
-<div class="function get-color">
+<script id="color_thief_output_template" type="text/x-mustache">
+<div class="function get_color">
 <div class="swatches">
 <div class="swatch dominant" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})">{{color.0}},{{color.1}},{{color.2}}</div>
 </div>
 </div>
-<div class="function get-palette">
-<div class="function-output">
+<div class="function get_palette">
+<div class="function_output">
 <div class="swatches">
 {{#palette}}
 <div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">{{0}},{{1}},{{2}}</div>
