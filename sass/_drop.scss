@@ -68,22 +68,9 @@ header {
 .drag_drop_section { display: none; }
 
 .drop_shop_bg{
-  //width: 80vw;
-  //height: 80vw;
   margin-left: auto;
   margin-right: auto;
 }
-//
-// .drop_zone {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   height: 100vw;
-//   margin: 0;
-// }
 
 /* uncss:ignore */
 body.dragging .drop_zone_label { color: rgba(255,255,255,.5);}
@@ -93,24 +80,12 @@ body.dragging .default_label { display: none; }
 /* uncss:ignore */
 body.dragging .dragging_label { display: block; }
 
-// .drop_zone_label {
-//   position: relative;
-//   top: 18vw;
-//   //line-height: 50vw;
-//   color: rgba(255,255,255,.25);
-//   font-size: $liquid_font_med;
-//   text-align: center;
-//   pointer-events: none;
-//   text-transform: uppercase;
-// }
-
 /* uncss:ignore */
 .get_color,
 .function_title,
 .dropped_image .run_functions_button,
 .dragging_label,
 code {display:none;}
-
 
 .octopal{ pointer-events: none;}
 
