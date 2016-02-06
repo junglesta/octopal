@@ -15,7 +15,7 @@ html {
   color: #000;
   font: caption;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 2.5vw;
   background: #161616; }
 
 body {
@@ -382,6 +382,12 @@ body.dragging {
   text-align: center; }
   .dragging .octopal .st2 {
     fill: #0007cc; }
+
+.octopal .eye {
+  fill: #5297e0; }
+
+.octopal .eye_outline {
+  fill: transparent; }
 
 header {
   padding: 0;

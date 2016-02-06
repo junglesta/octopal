@@ -25,7 +25,16 @@ body.dragging {
       font-weight: 200;
       text-align: center;
       .dragging &{ fill : $blue;}
-    }
+  }
+  //objects
+  .eye{fill:$blue_4;}
+  .eye_outline{
+    //animate slow pulse infinite
+    fill:transparent;
+  }
+  .body{}
+  .body_outline{}
+
 }
 
 
