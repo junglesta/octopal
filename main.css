@@ -395,53 +395,54 @@ body.dragging {
     fill: transparent; }
 
 header {
-  width: 100%; }
+  width: 100%;
+  /* uncss:ignore */ }
+  header .container {
+    margin: 0 auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: flex-end; }
   .app_page header {
     position: fixed;
     z-index: 100;
     bottom: 0;
     text-align: left; }
-  header .lead {
-    padding: 0;
-    margin: 2rem;
-    width: 100%;
-    color: #477eeb; }
-    .app_page header .lead {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      text-align: right; }
   header .logo {
     width: 100%;
-    margin: 2rem;
+    margin: 1.5rem 2rem;
     color: #477eeb; }
-    .app_page header .logo {
-      position: fixed;
-      bottom: 0;
-      left: 0; }
-  header .see_how {
+  header .lead {
+    padding: 0;
+    margin: 1.5rem 2rem;
+    width: 100%;
+    color: #477eeb;
+    text-align: center; }
+  header .demo {
     width: 100%;
     color: #d4e5f7;
     position: relative;
-    z-index: 101; }
-    header .see_how p {
+    z-index: 101;
+    margin: .75rem 2rem; }
+    header .demo p {
       padding: 0 2rem;
-      text-transform: capitalize;
-      width: 30%;
+      margin: 0;
+      background-color: black;
       min-width: 200px;
-      margin: 0 auto;
+      height: 48px;
       text-align: center;
       line-height: 48px;
       font-size: 32px;
-      height: 48px;
-      background-color: black;
+      text-transform: capitalize;
       border-radius: 5px; }
-
-/* uncss:ignore */
-.container {
-  margin: 0 auto;
-  max-width: 40rem;
-  width: 100%; }
+  .dragging header {
+    display: none; }
 
 .sharing_section {
   position: fixed;
@@ -476,5 +477,8 @@ code {
 
 .octopal {
   pointer-events: none; }
+
+.dragged_images {
+  margin: 2rem 0; }
 
 /*** that's it folks ***/

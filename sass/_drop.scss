@@ -40,12 +40,26 @@ body.dragging {
   }
   .body{}
   .body_outline{}
-
 }
+
 
 
 header {
   width: 100%;
+  /* uncss:ignore */
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   .app_page &{
     position: fixed;
     z-index: 100;
@@ -53,58 +67,47 @@ header {
     text-align: left;
   }
 
-  .lead{
-    padding: 0;
-    margin: 2rem;
-    width: 100%;
-    color: $blue_3;
-    .app_page &{
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      text-align: right;
-    }
-
-  }
   .logo{
     width: 100%;
-    margin: 2rem;
+    margin: 1.5rem 2rem;
     color: $blue_3;
-    .app_page &{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-    }
   }
-  .see_how{
+
+  .lead{
+    padding: 0;
+    margin: 1.5rem 2rem;
+    width: 100%;
+    color: $blue_3;
+    text-align: center;
+  }
+
+  .demo{
     width: 100%;
     color: $white;
     position: relative;
     z-index: 101;
+    margin: .75rem 2rem;
     p{
       padding: 0 2rem;
-      text-transform: capitalize;
-      width: 30%;
+      margin: 0;
+      background-color: black;
+      //width: 30%;
       min-width: 200px;
-      margin: 0 auto;
+      height: 48px;
       text-align: center;
       line-height: 48px;
       font-size: 32px;
-      height: 48px;
-      background-color: black;
+      text-transform: capitalize;
       border-radius: 5px;
     }
   }
+  .dragging &{display: none;}
+
+
 }
 
 
 
-/* uncss:ignore */
-.container {
-  margin: 0 auto;
-  max-width: 40rem;
-  width: 100%;
-}
 
 .sharing_section {
   position: fixed;
@@ -138,6 +141,8 @@ code {display:none;}
 
 .octopal{ pointer-events: none;}
 
-
+.dragged_images{
+  margin: 2rem 0;
+}
 
 /*** that's it folks ***/
