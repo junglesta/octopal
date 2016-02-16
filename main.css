@@ -347,7 +347,7 @@ hr {
     .swatch .rgb {
       -webkit-transform: rotate(-90deg);
       transform: rotate(-90deg);
-      line-height: 14.5; } }
+      line-height: 20; } }
   @media only screen and (min-width: 481px) and (max-width: 960px) {
     .swatch .rgb {
       -webkit-transform: rotate(-90deg);
