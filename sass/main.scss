@@ -4,6 +4,7 @@
 $white:  hsla(211, 70%, 90%, 1);
 $blue_4: hsla(211, 70%, 60%, 1);
 $blue_3: hsla(220, 80%, 60%, 1);
+$blue_25: hsla(225, 85%, 55%, 1);
 $blue_2: hsla(229, 90%, 50%, 1);
 $blue:   hsla(238, 100%, 40%, 1);
 
@@ -12,7 +13,7 @@ $text_color:  red;
 $blackgrey:   #161616;
 
 // derivates
-$bg_color:      $blue_4;
+$bg_color: $blue_4;
 $html_bg_color: $blackgrey;
 
 //liquid type
@@ -26,6 +27,8 @@ $liquid_font_med: 3vw;
 
 @import
 "base",
+"cmq",
+"octopal",
 "buttons",
 "images",
 "output",

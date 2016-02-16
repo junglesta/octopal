@@ -1,13 +1,9 @@
 /* uncss:ignore */
 .example_images{
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -37,14 +33,13 @@
 
 
 
-// /* uncss:ignore */
+/* uncss:ignore */
 // .examples-section .image-section .target-image {
-//   border-bottom-radius: 8px;
+// border-bottom-radius: 8px;
 // }
-//
-// /* uncss:ignore */
+
+/* uncss:ignore */
 // .examples-section .image-section.with-color-thief-output .target-image {
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
+// border-bottom-left-radius: 0;
+// border-bottom-right-radius: 0;
 // }
-//

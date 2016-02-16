@@ -1,0 +1,35 @@
+//octopal-grafik
+.octopal{
+  width: auto;
+  max-height: 85vh;
+  pointer-events: none;
+  display: block;
+  /*outline*/
+  .st0{
+    fill:$blue;
+    /* set variation on user action*/
+    .dragging &{ fill : $blue_4;}
+  }
+  /*body*/
+  .st1{
+    fill:$blue;
+    .dragging &{ fill : $blue_4;}
+  }
+  /*text*/
+  .st2{
+      fill:$white;
+      font: caption;
+      font-size: 55px;
+      font-weight: 200;
+      text-align: center;
+      .dragging &{ fill : $blue;}
+  }
+  /*objects*/
+  .eye{fill:$blue_4;}
+  .eye_outline{
+    /*animate slow pulse infinite*/
+    fill:transparent;
+  }
+  .body{}
+  .body_outline{}
+}

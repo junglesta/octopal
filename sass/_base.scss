@@ -30,7 +30,7 @@ body {
 section{
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 0;
+  //padding: 2rem 0;
   text-align: center;
 }
 
@@ -46,7 +46,6 @@ abbr[title] {
 }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -105,8 +104,6 @@ table {
 }
 
 
-
-
 h1, h2, h3, h4, h5 {
   color: #222;
   line-height: 1.2;
@@ -150,16 +147,17 @@ a {
     &:hover{ color: lighten($white, 10);}
 }
 
+::-moz-selection, ::-moz-selection {
+    background: $bg_color;
+    color: #fff;
+}
+
 ::-moz-selection, ::selection {
     background: $bg_color;
     color: #fff;
 }
 code {
     color: #aaa;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
     border-radius: 8px;
     font-family: Consolas, Courier, monospace;
     font-size: 0.9rem;
@@ -176,27 +174,24 @@ ul {
 
 hr {
   border: 0;
-  border-top: 2px solid $white;
+  border-top: 2px solid $bg_color;
   margin: 2rem auto;
   width: 3rem;
 }
 
 
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 
-//Utilities
+/*Utilities*/
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear: both; }
 .no_select, %no_select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;

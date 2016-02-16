@@ -1,48 +1,10 @@
 /* uncss:ignore */
-body.dragging {
-  background-color: $blue;
-}
-
+body.dragging { background-color: $blue;}
 
 .bungkus{
   display: block;
   min-height: 100vh;
 }
-
-//svg colors
-.octopal{
-  display: block;
-  //outline
-  .st0{
-    fill:$blue;
-    // set variation on user action
-    .dragging &{ fill : $blue_4;}
-  }
-  //body
-  .st1{
-    fill:$blue;
-    .dragging &{ fill : $blue_4;}
-  }
-  //text
-  .st2{
-      fill:$white;
-      font: caption;
-      font-size: 55px;
-      font-weight: 200;
-      text-align: center;
-      .dragging &{ fill : $blue;}
-  }
-  //objects
-  .eye{fill:$blue_4;}
-  .eye_outline{
-    //animate slow pulse infinite
-    fill:transparent;
-  }
-  .body{}
-  .body_outline{}
-}
-
-
 
 header {
   width: 100%;
@@ -51,66 +13,67 @@ header {
     margin: 0 auto;
     width: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
     -ms-grid-row-align: flex-end;
     align-items: flex-end;
+    @include media( "screen", "<minWidth") {
+      -webkit-box-orient:
+      vertical;-webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+    }
   }
+
   .app_page &{
     position: fixed;
     z-index: 100;
     bottom: 0;
-    text-align: left;
   }
 
   .logo{
-    width: 100%;
     margin: 1.5rem 2rem;
-    color: $blue_3;
+    color: $blue_25;
+    @include media( "screen", "<minWidth") {
+      text-align: center;
+      margin:0;
+    }
   }
 
   .lead{
     padding: 0;
     margin: 1.5rem 2rem;
-    width: 100%;
-    color: $blue_3;
+    color: $blue_4;
     text-align: center;
+    @include media( "screen", "<minWidth") { margin:0; }
   }
 
   .demo{
-    width: 100%;
     color: $white;
     position: relative;
     z-index: 101;
     margin: .75rem 2rem;
+    @include media( "screen", "<minWidth") { margin:0; }
+
     p{
       padding: 0 2rem;
       margin: 0;
-      background-color: black;
-      //width: 30%;
-      min-width: 200px;
+      min-width: 180px;
       height: 48px;
       text-align: center;
       line-height: 48px;
-      font-size: 32px;
+      font-size: 1rem;
       text-transform: capitalize;
       border-radius: 5px;
+      border: 1px solid $blue_4;
     }
   }
   .dragging &{display: none;}
-
-
 }
-
-
 
 
 .sharing_section {
@@ -121,18 +84,11 @@ header {
 }
 
 /* uncss:ignore */
-// .drag_drop_section { display: none; }
-
-.drop_shop_bg{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* uncss:ignore */
 body.dragging .drop_zone_label { color: rgba(255,255,255,.5);}
 
 /* uncss:ignore */
 body.dragging .default_label { display: none; }
+
 /* uncss:ignore */
 body.dragging .dragging_label { display: block; }
 
@@ -143,10 +99,8 @@ body.dragging .dragging_label { display: block; }
 .dragging_label,
 code {display:none;}
 
-.octopal{ pointer-events: none;}
-
 .dragged_images{
-  margin: 2rem 0;
+  padding: 2rem 0 10rem 0;
 }
 
 /*** that's it folks ***/

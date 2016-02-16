@@ -114,18 +114,22 @@
 <!-- output Mustache templates -->
 <script id="color_thief_output_template" type="text/x-mustache">
 <div class="function get_color">
-<div class="swatches">
-<div class="swatch dominant" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})">{{color.0}},{{color.1}},{{color.2}}</div>
-</div>
+	<div class="swatches">
+		<div class="swatch dominant" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})">
+			<div class="rgb">{{color.0}}<br>{{color.1}}<br>{{color.2}}</div>
+		</div>
+	</div>
 </div>
 <div class="function get_palette">
-<div class="function_output">
-<div class="swatches">
-{{#palette}}
-<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">{{0}},{{1}},{{2}}</div>
-{{/palette}}
-</div>
-</div>
+	<div class="function_output">
+		<div class="swatches">
+			{{#palette}}
+			<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">
+				<div class="rgb">{{0}},{{1}},{{2}}</div>
+			</div>
+			{{/palette}}
+		</div>
+	</div>
 </div>
 </script>
 

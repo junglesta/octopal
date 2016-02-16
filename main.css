@@ -29,7 +29,6 @@ body {
 section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 0;
   text-align: center; }
 
 /* uncss:ignore */
@@ -44,7 +43,6 @@ abbr[title] {
   border-bottom: 1px dotted; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -141,16 +139,16 @@ a {
   a:hover {
     color: white; }
 
+::-moz-selection, ::-moz-selection {
+  background: #5297e0;
+  color: #fff; }
+
 ::-moz-selection, ::selection {
   background: #5297e0;
   color: #fff; }
 
 code {
   color: #aaa;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
   border-radius: 8px;
   font-family: Consolas, Courier, monospace;
   font-size: 0.9rem;
@@ -167,15 +165,14 @@ ul {
 
 hr {
   border: 0;
-  border-top: 2px solid #d4e5f7;
+  border-top: 2px solid #5297e0;
   margin: 2rem auto;
   width: 3rem; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/*Utilities*/
 .group:before,
 .group:after {
   content: "";
@@ -187,10 +184,48 @@ hr {
 .no_select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+/**
+* Conditional Media Query Mixin by @sheiko (http://dsheiko.com)
+* The problem this mixin solves is explained there
+* http://css-tricks.com/conditional-media-query-mixins/
+* https://github.com/dsheiko
+* MIT license: http://www.opensource.org/licenses/mit-license.php
+*/
+.octopal {
+  width: auto;
+  max-height: 85vh;
+  pointer-events: none;
+  display: block;
+  /*outline*/
+  /*body*/
+  /*text*/
+  /*objects*/ }
+  .octopal .st0 {
+    fill: #0007cc;
+    /* set variation on user action*/ }
+    .dragging .octopal .st0 {
+      fill: #5297e0; }
+  .octopal .st1 {
+    fill: #0007cc; }
+    .dragging .octopal .st1 {
+      fill: #5297e0; }
+  .octopal .st2 {
+    fill: #d4e5f7;
+    font: caption;
+    font-size: 55px;
+    font-weight: 200;
+    text-align: center; }
+    .dragging .octopal .st2 {
+      fill: #0007cc; }
+  .octopal .eye {
+    fill: #5297e0; }
+  .octopal .eye_outline {
+    /*animate slow pulse infinite*/
+    fill: transparent; }
 
 /* uncss:ignore */
 .run_functions_button {
@@ -202,10 +237,6 @@ hr {
   margin-top: -4rem;
   margin-left: -4rem;
   border: 1px solid #5297e0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   border-radius: 50%;
   color: #5297e0;
   background-color: #000;
@@ -218,21 +249,15 @@ hr {
 /* uncss:ignore */
 .run_functions_button:hover {
   -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
   -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
-  -o-transition: -o-transform 0.2s;
-  transition: transform 0.2s; }
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s; }
 
 /* uncss:ignore */
 .run_functions_button:active {
   -webkit-transform: scale(0.9, 0.9);
-  -moz-transform: scale(0.9, 0.9);
-  -ms-transform: scale(0.9, 0.9);
-  -o-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9); }
 
 /* uncss:ignore */
@@ -240,14 +265,12 @@ hr {
   background-color: #000;
   color: #777;
   -webkit-transition: -webkit-transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75);
-  -moz-transition: -moz-transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75);
-  -o-transition: -o-transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75);
+  -webkit-transition: top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75), -webkit-transform 0.8s;
+  transition: top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75), -webkit-transform 0.8s;
   transition: transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75);
+  transition: transform 0.8s, top 0.8s cubic-bezier(0.22, -0.37, 0.75, 0.75), -webkit-transform 0.8s;
   top: 105%;
   -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
   transform: scale(0, 0); }
 
 /* uncss:ignore */
@@ -265,13 +288,9 @@ hr {
 /* uncss:ignore */
 .example_images {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
 /* uncss:ignore */
@@ -294,6 +313,8 @@ hr {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px; }
 
+/* uncss:ignore */
+/* uncss:ignore */
 /* uncss:ignore */
 .color_thief_output {
   position: relative;
@@ -319,17 +340,23 @@ hr {
   margin: 0;
   background: #ddd;
   color: white;
-  font-size: .45rem;
+  font-size: 12px;
   text-shadow: 0px 2px 2px black;
-  line-height: 550px; }
-  .swatch .txt {
-    transform: rotate(-90deg); }
+  line-height: 620px; }
+  @media only screen and (max-width: 480px) {
+    .swatch .rgb {
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      line-height: 14.5; } }
+  @media only screen and (min-width: 481px) and (max-width: 960px) {
+    .swatch .rgb {
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      line-height: 1; } }
 
 /* uncss:ignore */
 .swatches {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 300px; }
@@ -371,29 +398,6 @@ body.dragging {
   display: block;
   min-height: 100vh; }
 
-.octopal {
-  display: block; }
-  .octopal .st0 {
-    fill: #0007cc; }
-    .dragging .octopal .st0 {
-      fill: #5297e0; }
-  .octopal .st1 {
-    fill: #0007cc; }
-    .dragging .octopal .st1 {
-      fill: #5297e0; }
-  .octopal .st2 {
-    fill: #d4e5f7;
-    font: caption;
-    font-size: 55px;
-    font-weight: 200;
-    text-align: center; }
-    .dragging .octopal .st2 {
-      fill: #0007cc; }
-  .octopal .eye {
-    fill: #5297e0; }
-  .octopal .eye_outline {
-    fill: transparent; }
-
 header {
   width: 100%;
   /* uncss:ignore */ }
@@ -401,50 +405,58 @@ header {
     margin: 0 auto;
     width: 100%;
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
     -ms-grid-row-align: flex-end;
     align-items: flex-end; }
+    @media only screen and (max-width: 480px) {
+      header .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-grid-row-align: center;
+        align-items: center; } }
   .app_page header {
     position: fixed;
     z-index: 100;
-    bottom: 0;
-    text-align: left; }
+    bottom: 0; }
   header .logo {
-    width: 100%;
     margin: 1.5rem 2rem;
-    color: #477eeb; }
+    color: #2b5bee; }
+    @media only screen and (max-width: 480px) {
+      header .logo {
+        text-align: center;
+        margin: 0; } }
   header .lead {
     padding: 0;
     margin: 1.5rem 2rem;
-    width: 100%;
-    color: #477eeb;
+    color: #5297e0;
     text-align: center; }
+    @media only screen and (max-width: 480px) {
+      header .lead {
+        margin: 0; } }
   header .demo {
-    width: 100%;
     color: #d4e5f7;
     position: relative;
     z-index: 101;
     margin: .75rem 2rem; }
+    @media only screen and (max-width: 480px) {
+      header .demo {
+        margin: 0; } }
     header .demo p {
       padding: 0 2rem;
       margin: 0;
-      background-color: black;
-      min-width: 200px;
+      min-width: 180px;
       height: 48px;
       text-align: center;
       line-height: 48px;
-      font-size: 32px;
+      font-size: 1rem;
       text-transform: capitalize;
-      border-radius: 5px; }
+      border-radius: 5px;
+      border: 1px solid #5297e0; }
   .dragging header {
     display: none; }
 
@@ -453,11 +465,6 @@ header {
   z-index: 10;
   top: 20px;
   right: 0; }
-
-/* uncss:ignore */
-.drop_shop_bg {
-  margin-left: auto;
-  margin-right: auto; }
 
 /* uncss:ignore */
 body.dragging .drop_zone_label {
@@ -479,10 +486,7 @@ body.dragging .dragging_label {
 code {
   display: none; }
 
-.octopal {
-  pointer-events: none; }
-
 .dragged_images {
-  margin: 2rem 0; }
+  padding: 2rem 0 10rem 0; }
 
 /*** that's it folks ***/
