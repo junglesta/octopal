@@ -1,4 +1,3 @@
 node_modules/
 _lab/**
-
-_lab/indexu.html
+.DS_Store
