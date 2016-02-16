@@ -15,10 +15,11 @@ html {
   color: #000;
   font: caption;
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 16px;
   background: #161616; }
 
 body {
+  font-size: 2.5vw;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -62,7 +63,7 @@ q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 small {
-  font-size: 50%;
+  font-size: 70%;
   color: #5297e0; }
 
 sub, sup {
@@ -109,20 +110,20 @@ h1, h2, h3, h4, h5 {
   font-weight: 100; }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0 0 0.2rem 0;
   line-height: 1.1; }
 
 h2 {
+  font-size: 2rem;
   color: #5297e0;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 200; }
 
 h3 {
+  font-size: 1.5rem;
   color: #5297e0;
-  font-size: 1.2rem;
   margin-bottom: 0.5rem; }
 
 p {
@@ -130,15 +131,15 @@ p {
   text-align: left; }
 
 .lead {
+  font-size: 1rem;
   max-width: 50rem;
-  margin-bottom: 1.4rem;
-  font-size: 1.1rem; }
+  margin-bottom: 1.4rem; }
 
 a {
-  color: #5297e0;
+  color: #d4e5f7;
   text-decoration: none; }
   a:hover {
-    color: #7db1e8; }
+    color: white; }
 
 ::-moz-selection, ::selection {
   background: #5297e0;
@@ -277,7 +278,8 @@ hr {
 .image_section {
   display: block;
   position: relative;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  overflow: hidden; }
 
 /* uncss:ignore */
 .image_wrap {
@@ -288,7 +290,7 @@ hr {
 .target_image {
   display: block;
   width: 100%;
-  height: 510px;
+  height: auto;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px; }
 
@@ -319,7 +321,9 @@ hr {
   color: white;
   font-size: .45rem;
   text-shadow: 0px 2px 2px black;
-  line-height: 850px; }
+  line-height: 550px; }
+  .swatch .txt {
+    transform: rotate(-90deg); }
 
 /* uncss:ignore */
 .swatches {
@@ -328,7 +332,7 @@ hr {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 400px; }
+  height: 300px; }
 
 /* uncss:ignore */
 .get_palette .swatch,
@@ -363,41 +367,75 @@ footer {
 body.dragging {
   background-color: #0007cc; }
 
-.octopal .st0 {
-  fill: #0007cc; }
-  .dragging .octopal .st0 {
-    fill: #5297e0; }
+.bungkus {
+  display: block;
+  min-height: 100vh; }
 
-.octopal .st1 {
-  fill: #0007cc; }
-  .dragging .octopal .st1 {
-    fill: #5297e0; }
-
-.octopal .st2 {
-  fill: #5297e0;
-  font: caption;
-  font-size: 55px;
-  font-weight: 200;
-  text-align: center; }
-  .dragging .octopal .st2 {
+.octopal {
+  display: block; }
+  .octopal .st0 {
     fill: #0007cc; }
-
-.octopal .eye {
-  fill: #5297e0; }
-
-.octopal .eye_outline {
-  fill: transparent; }
+    .dragging .octopal .st0 {
+      fill: #5297e0; }
+  .octopal .st1 {
+    fill: #0007cc; }
+    .dragging .octopal .st1 {
+      fill: #5297e0; }
+  .octopal .st2 {
+    fill: #d4e5f7;
+    font: caption;
+    font-size: 55px;
+    font-weight: 200;
+    text-align: center; }
+    .dragging .octopal .st2 {
+      fill: #0007cc; }
+  .octopal .eye {
+    fill: #5297e0; }
+  .octopal .eye_outline {
+    fill: transparent; }
 
 header {
-  padding: 0;
-  text-align: center; }
-  header h1 {
-    color: #d4e5f7; }
-  header p {
-    text-align: center; }
-
-.logo {
-  color: #0007cc; }
+  width: 100%; }
+  .app_page header {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    text-align: left; }
+  header .lead {
+    padding: 0;
+    margin: 2rem;
+    width: 100%;
+    color: #477eeb; }
+    .app_page header .lead {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right; }
+  header .logo {
+    width: 100%;
+    margin: 2rem;
+    color: #477eeb; }
+    .app_page header .logo {
+      position: fixed;
+      bottom: 0;
+      left: 0; }
+  header .see_how {
+    width: 100%;
+    color: #d4e5f7;
+    position: relative;
+    z-index: 101; }
+    header .see_how p {
+      padding: 0 2rem;
+      text-transform: capitalize;
+      width: 30%;
+      min-width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 48px;
+      font-size: 32px;
+      height: 48px;
+      background-color: black;
+      border-radius: 5px; }
 
 /* uncss:ignore */
 .container {
@@ -412,9 +450,6 @@ header {
   right: 0; }
 
 /* uncss:ignore */
-.drag_drop_section {
-  display: none; }
-
 .drop_shop_bg {
   margin-left: auto;
   margin-right: auto; }

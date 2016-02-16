@@ -18,7 +18,6 @@ body {
 }
 
 /* uncss:ignore */
-
 section {
   max-width: 900px;
   margin: 0 auto;
@@ -27,13 +26,11 @@ section {
 }
 
 /* uncss:ignore */
-
 a:focus {
   outline: thin dotted;
 }
 
 /* uncss:ignore */
-
 a:active,
 a:hover {
   outline: 0;
@@ -118,7 +115,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .run-functions-button {
   position: absolute;
   top: 50%;
@@ -143,7 +139,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .run-functions-button:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
@@ -157,7 +152,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .run-functions-button:active {
   -webkit-transform: scale(0.9, 0.9);
   -moz-transform: scale(0.9, 0.9);
@@ -167,7 +161,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .run-functions-button.hide {
   background-color: #000;
   color: #777;
@@ -183,20 +176,15 @@ header h1 {
   transform: scale(0, 0);
 }
 
-/* uncss:ignore */
-
+/*
 .touch {
-  /* uncss:ignore */
-}
+}*/
 
-/* uncss:ignore */
-
-.no-touch .no-touch-label {
+/*.no-touch .no-touch-label {
   display: inline;
-}
+}*/
 
 /* uncss:ignore */
-
 .example-images {
   display: -webkit-box;
   display: -webkit-flex;
@@ -210,7 +198,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .image-section {
   display: block;
   position: relative;
@@ -218,14 +205,12 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .image-wrap {
   position: relative;
   line-height: 1;
 }
 
 /* uncss:ignore */
-
 .target-image {
   display: block;
   width: 100%;
@@ -235,7 +220,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .container {
   margin: 0 auto;
   max-width: 40rem;
@@ -243,21 +227,18 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .color-thief-output {
   position: relative;
   display: none;
 }
 
 /* uncss:ignore */
-
 .function-title {
   margin-top: 0;
   font-size: .5rem;
 }
 
 /* uncss:ignore */
-
 .function {
   box-sizing: border-box;
   position: absolute;
@@ -268,7 +249,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .swatch {
   display: inline-block;
   margin: 0;
@@ -279,7 +259,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .swatches {
   display: -webkit-box;
   display: -webkit-flex;
@@ -291,7 +270,6 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 .get-palette .swatch,
 .get-color .swatch {
   height: 24rem;
@@ -300,13 +278,11 @@ header h1 {
 }
 
 /* uncss:ignore */
-
 canvas {
   display: none;
 }
 
 /* uncss:ignore */
-
 .swatch.dominant {
   display: none;
 }
@@ -332,7 +308,6 @@ footer a:hover {
 }
 
 /* uncss:ignore */
-
 .drag-drop-section {
   display: none;
 }
@@ -348,7 +323,6 @@ footer a:hover {
 }
 
 /* uncss:ignore */
-
 .drop-zone.dragging .default-label {
   display: none;
 }
@@ -366,7 +340,6 @@ footer a:hover {
 }
 
 /* uncss:ignore */
-
 .get-color,
 .function-title,
 .dropped-image .run-functions-button,
@@ -375,4 +348,7 @@ code {
   display: none;
 }
 
+.bungkus{
+  min-height: 100vw;
+}
 /* that's it*/

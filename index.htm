@@ -10,7 +10,7 @@
 		<meta name="author" content="toybreaker">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-		
+
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -34,7 +34,7 @@
 
 	</head>
 
-	<body id="drop_zone" class="app_page ">
+	<body id="drop_zone" class="app_page">
 
 		<div class="bungkus">
 
@@ -96,7 +96,10 @@
 	<header>
 		<div class="container">
 			<h1 class="logo">Octopal</h1>
-			<h2 class="lead"><a title="see examples" href="demo.htm">Feed her images and get rgb palettes. See How...</a></h2>
+			<h2 class="lead">Feed her images <br class="maybe" />and get rgb palettes.</h2>
+			<a href="demo.htm">
+				<h3 class="see_how"><p>examples</p></h3>
+			</a>
 		</div>
 	</header>
 
@@ -107,14 +110,14 @@
 	<script id='image_section_template' type='text/x-mustache'>
 	{{#images}}
 	<div class="image_section {{class}}">
-	<div class="image_wrap">
-	<button class="run_functions_button">
-	<span class="no_touch_label"></span>
-	<span class="touch_label">♥</span>
-	</button>
-	<img class="target_image" src="{{file}}" />
-	</div>
-	<div class="color_thief_output"></div>
+		<div class="image_wrap">
+			<button class="run_functions_button">
+				<span class="no_touch_label"></span>
+				<span class="touch_label">♥</span>
+			</button>
+			<img class="target_image" src="{{file}}" />
+		</div>
+		<div class="color_thief_output"></div>
 	</div>
 	{{/images}}
 	</script>
@@ -122,18 +125,20 @@
 	<!-- output Mustache templates -->
 	<script id="color_thief_output_template" type="text/x-mustache">
 	<div class="function get_color">
-	<div class="swatches">
-	<div class="swatch dominant" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})">{{color.0}},{{color.1}},{{color.2}}</div>
-	</div>
+		<div class="swatches">
+			<div class="swatch dominant" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})">
+				<div class="rgb">{{color.0}}<br>{{color.1}}<br>{{color.2}}</div>
+			</div>
+		</div>
 	</div>
 	<div class="function get_palette">
-	<div class="function_output">
-	<div class="swatches">
-	{{#palette}}
-	<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">{{0}},{{1}},{{2}}</div>
-	{{/palette}}
-	</div>
-	</div>
+		<div class="function_output">
+			<div class="swatches">
+				{{#palette}}
+				<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">{{0}},{{1}},{{2}}</div>
+				{{/palette}}
+			</div>
+		</div>
 	</div>
 	</script>
 

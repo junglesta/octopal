@@ -1,11 +1,17 @@
 /* uncss:ignore */
 body.dragging {
   background-color: $blue;
+}
 
+
+.bungkus{
+  display: block;
+  min-height: 100vh;
 }
 
 //svg colors
 .octopal{
+  display: block;
   //outline
   .st0{
     fill:$blue;
@@ -19,7 +25,7 @@ body.dragging {
   }
   //text
   .st2{
-      fill:$blue_4;
+      fill:$white;
       font: caption;
       font-size: 55px;
       font-weight: 200;
@@ -39,16 +45,59 @@ body.dragging {
 
 
 header {
-  padding: 0;
-  //background-color: rgba(255,255,255,.15);
-  h1 {color: $white;}
-  text-align: center;
-  p { text-align: center; }
+  width: 100%;
+  .app_page &{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    text-align: left;
+  }
+
+  .lead{
+    padding: 0;
+    margin: 2rem;
+    width: 100%;
+    color: $blue_3;
+    .app_page &{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+
+  }
+  .logo{
+    width: 100%;
+    margin: 2rem;
+    color: $blue_3;
+    .app_page &{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .see_how{
+    width: 100%;
+    color: $white;
+    position: relative;
+    z-index: 101;
+    p{
+      padding: 0 2rem;
+      text-transform: capitalize;
+      width: 30%;
+      min-width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 48px;
+      font-size: 32px;
+      height: 48px;
+      background-color: black;
+      border-radius: 5px;
+    }
+  }
 }
 
-.logo{
-  color: $blue;
-}
+
 
 /* uncss:ignore */
 .container {
@@ -65,7 +114,7 @@ header {
 }
 
 /* uncss:ignore */
-.drag_drop_section { display: none; }
+// .drag_drop_section { display: none; }
 
 .drop_shop_bg{
   margin-left: auto;

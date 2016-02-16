@@ -14,11 +14,12 @@ html {
   color: #000;
   font: caption;
   font-weight: 400;
-  font-size: $liquid_font_base;
+  font-size: $html_base_font_size;
   background: $html_bg_color;
 }
 
 body {
+  font-size: $liquid_font_base;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -63,7 +64,7 @@ code, kbd, pre, samp {
 pre { white-space: pre-wrap;}
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small {
-  font-size: 50%;
+  font-size: 70%;
   color: $bg_color;
 }
 
@@ -113,22 +114,22 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0 0 0.2rem 0;
   line-height: 1.1;
 }
 
 h2 {
+  font-size: 2rem;
   color: $bg_color;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 200;
 }
 
 h3 {
+  font-size: 1.5rem;
   color: $bg_color;
-  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -138,15 +139,15 @@ p {
 }
 
 .lead {
+  font-size: 1rem;
   max-width: 50rem;
   margin-bottom: 1.4rem;
-  font-size: 1.1rem;
 }
 
 a {
-    color: $bg_color;
+    color: $white;
     text-decoration: none;
-    &:hover{ color: lighten($bg_color, 10);}
+    &:hover{ color: lighten($white, 10);}
 }
 
 ::-moz-selection, ::selection {
