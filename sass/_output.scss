@@ -29,11 +29,7 @@
   text-shadow: 0px 2px 2px black;
   line-height: 620px;
   @include media( "screen", "<minWidth")  {
-    .rgb{
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg);
-      line-height: 30;
-    }
+    .rgb{ display: none;}
   }
   @include media( "screen", ">minWidth", "<bp1Width")  {
     .rgb{
