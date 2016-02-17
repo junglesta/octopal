@@ -1,5 +1,11 @@
 {
-	"name": "Octopal",
+	"short_name": "Octopal",
+	"name": "Octopal: get palettes from images",
+	"background_color": "#0007cc",
+	"theme_color": "#fff",
+	"display": "standalone",
+	"start_url": "http:\/\/octo.junglestar.org",
+	"display": "standalone",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -37,7 +43,5 @@
 			"type": "image\/png",
 			"density": 4
 		}
-	],
-	"start_url": "http:\/\/octo.junglestar.org",
-	"display": "standalone"
+	]
 }
