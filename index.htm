@@ -92,7 +92,7 @@
 	<header>
 		<div class="container">
 			<h1 class="logo">Octopal</h1>
-			<h2 class="lead">Feed her images <br class="maybe" />and get rgb palettes.</h2>
+			<h2 class="lead">Gimmi images <br class="maybe" />get rgb palettes</h2>
 			<a  class="demo" href="demo.htm">
 				<h3><p>examples</p></h3>
 			</a>
@@ -131,14 +131,18 @@
 		<div class="function_output">
 			<div class="swatches">
 				{{#palette}}
-				<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">
-					<div class="rgb">{{0}},{{1}},{{2}}</div>
+				<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}})); ">
+
+					<div class="rgb" style="background-color: rgb({{0}},{{1}},{{2}});">&nbsp&nbsp&nbsp{{0}},{{1}},{{2}}</div>
+
+
 				</div>
 				{{/palette}}
 			</div>
 		</div>
 	</div>
 	</script>
+
 
 
 	<script src="js/color-thief.min.js"></script>

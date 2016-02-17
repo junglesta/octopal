@@ -124,8 +124,11 @@
 	<div class="function_output">
 		<div class="swatches">
 			{{#palette}}
-			<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}}));">
-				<div class="rgb">{{0}},{{1}},{{2}}</div>
+			<div class="swatch" style="background: linear-gradient(rgba(0,0,0,0),rgb({{0}},{{1}},{{2}})); ">
+
+				<div class="rgb" style="background-color: rgb({{0}},{{1}},{{2}});">&nbsp&nbsp&nbsp{{0}},{{1}},{{2}}</div>
+
+
 			</div>
 			{{/palette}}
 		</div>

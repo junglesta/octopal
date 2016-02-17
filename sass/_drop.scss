@@ -58,11 +58,13 @@ header {
     z-index: 101;
     margin: .75rem 2rem;
     @include media( "screen", "<minWidth") { margin:0; }
+    h3 {
+      margin:.5rem;
+    }
 
     p{
       padding: 0 2rem;
       margin: 0;
-      min-width: 180px;
       height: 48px;
       text-align: center;
       line-height: 48px;
@@ -99,7 +101,7 @@ body.dragging .dragging_label { display: block; }
 .dragging_label,
 code {display:none;}
 
-.dragged_images{
+.has_fish .dragged_images{
   padding: 2rem 0 10rem 0;
 }
 

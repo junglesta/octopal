@@ -83,6 +83,7 @@ $(document).ready(function () {
     };
     var handleDrop = function(event){
       $dropZone.removeClass('dragging');
+      $dropZone.addClass('has_fish');
       handleFiles(event.originalEvent.dataTransfer.files);
       return false;
     };
