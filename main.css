@@ -294,7 +294,7 @@ hr {
 .image_section {
   display: block;
   position: relative;
-  padding: 2rem 0;
+  padding: 10rem 0;
   overflow: hidden; }
 
 /* uncss:ignore */
@@ -357,8 +357,8 @@ hr {
     .swatch .rgb {
       -webkit-transform: rotate(-90deg);
       transform: rotate(-90deg);
-      -webkit-transform-origin: center center;
-      transform-origin: center center; } }
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right; } }
 
 /* uncss:ignore */
 .swatches {

@@ -1,8 +1,8 @@
 {
 	"short_name": "Octopal",
 	"name": "OCTOPAL gets colors from images",
-	"background_color": "#0007cc",
-	"theme_color": "#fff",
+	"background_color": "#000478",
+	"theme_color": "#0007cc",
 	"display": "standalone",
 	"start_url": "http:\/\/octo.junglestar.org",
 	"display": "standalone",

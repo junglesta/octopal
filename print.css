@@ -1,0 +1,25 @@
+/*print*/
+
+.container,
+.target_image,
+header{
+  display: none;
+}
+.get_color{
+  margin-bottom: 20pt;
+}
+.get_color:before{
+  content:"dominant color";
+}
+html,
+body{background-color: white;}
+
+.rgb{
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+.get_palette{
+  border: 0 none;
+}
