@@ -1,6 +1,6 @@
 {
 	"short_name": "Octopal",
-	"name": "Octopal \\n get colors from images",
+	"name": "Octopal \\r get colors from images",
 	"background_color": "#0007cc",
 	"theme_color": "#fff",
 	"display": "standalone",
