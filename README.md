@@ -1,11 +1,19 @@
-GUI work based on:
+
+
+dev time:
+---
+```bash
+npm install
+```
+
+Octopal is a GUI work based on:
 ---
 
 #Color Thief
 
 A script for grabbing the color palette from an image. Uses Javascript and the canvas tag to make it happen.
 
-[See a Demo](http://lokeshdhakar.com/projects/color-thief) | [Read more on my blog](http://lokeshdhakar.com/color-thief)
+[See a Demo](http://lokeshdhakar.com/projects/color-thief) | [Read more on lokeshdhakar blog](http://lokeshdhakar.com/color-thief)
 
 
 ##How to use

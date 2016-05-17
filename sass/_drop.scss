@@ -13,18 +13,28 @@ header {
     margin: 0 auto;
     width: 100%;
     display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: end;
     -ms-grid-row-align: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
     @include media( "screen", "<minWidth") {
       -webkit-box-orient:
       vertical;-webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column;
       -webkit-box-align: center;
       -ms-grid-row-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
     }
   }
@@ -77,6 +87,17 @@ header {
   .dragging &{display: none;}
 }
 
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    height: 90vh;
+    padding-right: 2rem;
+  }
+}
 
 .sharing_section {
   position: fixed;

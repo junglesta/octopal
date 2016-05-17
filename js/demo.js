@@ -47,7 +47,7 @@ $(document).ready(function () {
     var colorThiefOuputHTML = Mustache.to_html($('#color_thief_output_template').html(), colorThiefOutput);
 
 
-    $imageSection.addClass('with_color_thiefvoutput');
+    $imageSection.addClass('with_color_thief_output');
     $imageSection.find('.run_functions_button').addClass('hide');
 
     setTimeout(function(){
