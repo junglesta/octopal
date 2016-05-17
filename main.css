@@ -481,13 +481,18 @@ header {
   .dragging header {
     display: none; }
 
-.container {
+.app_page .container {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .container svg {
-    height: 90vh;
-    padding-right: 2rem; }
+  .app_page .container svg {
+    height: 90vh; }
+    @media only screen and (min-width: 961px) {
+      .app_page .container svg {
+        padding-right: 1rem; } }
+    @media only screen and (min-width: 1261px) {
+      .app_page .container svg {
+        padding-right: 2rem; } }
 
 .sharing_section {
   position: fixed;
