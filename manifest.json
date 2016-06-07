@@ -5,7 +5,6 @@
 	"theme_color": "#0007cc",
 	"display": "standalone",
 	"start_url": "http:\/\/octo.junglestar.org",
-	"display": "standalone",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
