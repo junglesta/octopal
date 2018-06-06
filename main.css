@@ -520,7 +520,17 @@ body.dragging .dragging_label {
 code {
   display: none; }
 
-.has_fish .dragged_images {
-  padding: 2rem 0 10rem 0; }
+.has_fish .image_section {
+ padding: 1rem 0;
+transition: padding 0.6s ease-in-out;
+backface-visibility: hidden;
+}
+
+.app_page.has_fish .container svg {
+  height: 30vh;
+
+ transition: height 0.6s ease-in-out;
+ backface-visibility: hidden;
+}
 
 /*** that's it folks ***/
