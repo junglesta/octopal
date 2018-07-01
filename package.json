@@ -1,11 +1,11 @@
 {
   "name": "color-sucker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "octopal",
   "main": "gulpfile.js",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.1.1",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1",
     "gulp-uncss": "^1.0.4"
   },
   "scripts": {
@@ -20,7 +20,5 @@
   },
   "author": "toybreaker",
   "license": "ISC",
-  "dependencies": {
-    "gulp-sass": "^2.1.1"
-  }
+  "dependencies": {}
 }

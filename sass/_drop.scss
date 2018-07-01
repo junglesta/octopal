@@ -1,9 +1,12 @@
 /* uncss:ignore */
-body.dragging { background-color: $blue;}
+body.dragging {
+  background-color: $blue;
+}
 
-.bungkus{
+.bungkus {
   display: block;
   min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 header {
@@ -25,9 +28,9 @@ header {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
-    @include media( "screen", "<minWidth") {
-      -webkit-box-orient:
-      vertical;-webkit-box-direction: normal;
+    @include media("screen", "<minWidth") {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
@@ -39,40 +42,46 @@ header {
     }
   }
 
-  .app_page &{
+  .app_page & {
     position: fixed;
     z-index: 100;
     bottom: 0;
+    background-color: $blackgrey;
   }
 
-  .logo{
+  .logo {
     margin: 1.5rem 2rem;
     color: $blue_25;
-    @include media( "screen", "<minWidth") {
+    @include media("screen", "<minWidth") {
       text-align: center;
-      margin:0;
+      margin: 0;
     }
   }
 
-  .lead{
+  .lead {
     padding: 0;
     margin: 1.5rem 2rem;
     color: $blue_4;
     text-align: center;
-    @include media( "screen", "<minWidth") { margin:0; }
+    @include media("screen", "<minWidth") {
+      margin: 0;
+    }
   }
 
-  .demo{
+  .demo {
     color: $white;
     position: relative;
     z-index: 101;
-    margin: .75rem 2rem;
-    @include media( "screen", "<minWidth") { margin:0; }
-    h3 {
-      margin:.5rem;
+    margin: 0.75rem 2rem;
+    @include media("screen", "<minWidth") {
+      margin: 0;
     }
 
-    p{
+    h3 {
+      margin: 0.5rem;
+    }
+
+    p {
       padding: 0 2rem;
       margin: 0;
       height: 48px;
@@ -84,21 +93,23 @@ header {
       border: 1px solid $blue_4;
     }
   }
-  .dragging &{display: none;}
+
+  .dragging & {
+    display: none;
+  }
 }
-
-
 
 .app_page .container {
   display: flex;
   justify-content: center;
   align-items: center;
+
   svg {
     height: 90vh;
-    @include media( "screen", ">bp1Width") {
+    @include media("screen", ">bp1Width") {
       padding-right: 1rem;
     }
-    @include media( "screen", ">maxWidth") {
+    @include media("screen", ">maxWidth") {
       padding-right: 2rem;
     }
   }
@@ -110,25 +121,28 @@ header {
   top: 20px;
   right: 0;
 }
-
 /* uncss:ignore */
-body.dragging .drop_zone_label { color: rgba(255,255,255,.5);}
-
+body.dragging .drop_zone_label {
+  color: rgba(255,255,255,.5);
+}
 /* uncss:ignore */
-body.dragging .default_label { display: none; }
-
+body.dragging .default_label {
+  display: none;
+}
 /* uncss:ignore */
-body.dragging .dragging_label { display: block; }
-
+body.dragging .dragging_label {
+  display: block;
+}
 /* uncss:ignore */
-.get_color,
-.function_title,
-.dropped_image .run_functions_button,
 .dragging_label,
-code {display:none;}
-
-.has_fish .dragged_images{
-  padding: 2rem 0 10rem 0;
+.dropped_image .run_functions_button,
+.function_title,
+.get_color,
+code {
+  display: none;
 }
 
+.has_fish .dragged_images {
+  padding: 2rem 0 10rem;
+}
 /*** that's it folks ***/
